@@ -5,6 +5,7 @@ sudo -u ubuntu mkdir -m 775 ~/.vim
 sudo -u ubuntu curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 apt install build-essential cmake python3-dev -y
+sudo cp ./go.sh /etc/profile.d
 sudo -u ubuntu cp ./.vimrc $HOME
 sudo -u ubuntu mkdir  ~/.vim/plugged
 rm go1.12.linux-amd64.tar.gz
